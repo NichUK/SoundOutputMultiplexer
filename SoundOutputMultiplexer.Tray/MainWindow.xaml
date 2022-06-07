@@ -1,0 +1,24 @@
+﻿<Window x:Class="SoundOutputMultiplexer.Tray.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundOutputMultiplexer.Tray"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Name="deviceGrid" Background="LightSteelBlue" Height="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="inputTitle" Grid.Column="0" Grid.Row="0" FontWeight="Bold">Select Input Device</TextBlock>
+        <StackPanel Name="inputDevicePanel" Grid.Column="0" Grid.Row="1" Height="Auto" Margin="0,10,0,0" />
+        <TextBlock Name="outputTitle" Grid.Column="0" Grid.Row="2" FontWeight="Bold" Margin="0,20,0,0">Select Output Devices</TextBlock>
+        <StackPanel Name="outputDevicePanel" Grid.Column="0" Grid.Row="3" Height="Auto" />
+    </Grid>
+</Window>
