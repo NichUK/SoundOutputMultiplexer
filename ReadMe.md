@@ -15,6 +15,11 @@ If you don't have a suitable virtual input device, then install
 It's donationware (suggested donation June '22 was $4.17), and provides a perfect
 virtual audio output device for the OS, and virtual audio input source for this project.
 
+This project also takes care of the fact that Virtual Audio Cables are straight pass-thru
+devices, and don't respond to the Volume controls. Simply select the cable as Output Master Device,
+on this project's configuration screen and the volume control will be automatically routed 
+to *all* output devices selected.
+
 
 
 #### Acknoweldgements
